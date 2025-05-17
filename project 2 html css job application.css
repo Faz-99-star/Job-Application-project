@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* to remove pre exsisting settings*/
+}
+body {
+    background-color: #ccc;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto; 
+} 
+
+.apply_box {
+ max-width: 600px;
+ padding: 20px;
+ background-color: white;
+ margin: 0 auto;
+ margin-top: 50px; 
+box-shadow: 4px 3px 5px rgb(1, 1, 1, 0.1);
+border-radius: 10px;
+}
+
+.Title_yaro {
+      font-size: 25px;
+}
+
+.form_container {
+    margin-top: 20px;
+   display: grid; 
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 20px;
+
+}  
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-size: 15px;
+    margin-bottom: 10px;
+    
+}
+
+input ,select , textarea {
+    padding: 6px 10px ;/*top to bottom thn left to right */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+
+}
+input , textarea:focus {
+    outline-color: red;
+}
+
+.button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    
+}
+    
+button {
+    background-color: orange;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 0.3 ease-in;
+
+}
+button:hover {
+    background-color: #ccc;
+    border: 2px solid red;
+    border-radius: 5px;
+    transition: 0.3 ease-in-out;
+    cursor: pointer;
+}
+
+    
